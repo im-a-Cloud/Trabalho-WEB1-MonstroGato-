@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* imorts para usar fontes customizadas*/
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #161616;
+}
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: "Goldman", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.menu-lateral {
+    position: fixed; /* faz ele seguir a rolagem */
+    top: 0;
+    right: 0;
+    width: 100px; /* dimensões*/
+    height: 100vh; /* Altura total da viewport */
+    color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-lateral li {
+    margin: 15px 0;
+  }
+  
+  .menu-lateral a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .IconesRedesSociais{
+    width: 25px;
+    height: 25px;
+  }
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* caso a iamgem seja muito grande ela não irá "sobrecarregar" o container*/
+    fill: white;
+    border: 1px solid white; /* Espessura e cor da borda */
+  }
+  .card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    padding-left: 6%;
+  }
