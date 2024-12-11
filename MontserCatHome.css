@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* imorts para usar fontes customizadas*/
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #161616;
+}
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: "Goldman", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.menu-lateral {
+  position: fixed; /* faz ele seguir a rolagem */
+  top: 0;
+  right: 0;
+  width: 100px; /* dimensões*/
+  height: 100vh; /* Altura total da viewport */
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin: 15px 0;
+}
+
+.menu-lateral a {
+  color: #fff;
+  text-decoration: none;
+}
+.IconesRedesSociais{
+  width: 25px;
+  height: 25px;
+}
+/* Alinhamento horizontal com espaço uniforme */
+.marcas {
+  padding: 10px;
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+/* Estilando imagens com espaçamento */
+.marcas img {
+  display: inline-block; /* Garante alinhamento horizontal */
+  width: 350px; /* Largura fixa */
+  height: auto; /* Mantém proporção */
+  object-fit: contain; /* Garante que as imagens não sejam cortadas */
+  margin-right: 15px; /* Espaço de 50px entre elas */
+}
+
+/* Remove a margem no último elemento para evitar espaço extra */
+.marcas img:last-child {
+  margin-right: 0;
+}
+.menuInferior {
+  display: flex; /* Alinhamento horizontal com flexbox */
+  justify-content: space-around; /* Espaçamento uniforme entre os itens */
+  align-items: center; /* Alinhamento vertical centralizado */
+  padding: 10px;
+  gap: 30px; /* Espaço entre os itens */
+}
+
+.item,.item2 {
+  display: flex;
+  flex-direction: column; /* Coloca o h1 e imagem verticalmente empilhados */
+  align-items: center; /* Centraliza horizontalmente cada item */
+}
+
+.imagensMenuInferior img {
+  height: 300px; /* Define uma altura fixa para todas as imagens */
+  width: auto; /* Mantém a proporção da imagem */
+  margin-top: 10px; /* Espaçamento entre o título e a imagem */
+}
+
+.imagensplaylist img {
+  height: 400px; /* Define uma altura fixa para todas as imagens */
+  width: auto; /* Mantém a proporção da imagem */
+  margin-top: 10px; /* Espaçamento entre o título e a imagem */
+}
+
+.emAlta {
+  display: flex; /* Flexbox para agrupar os pares horizontalmente */
+  justify-content: space-around; /* Espaçamento entre os grupos */
+  gap: 20px; /* Espaço entre os grupos */
+  padding: 10px;
+}
+
+.grupo {
+  display: flex; /* Coloca as imagens do mesmo grupo horizontalmente */
+  gap: 10px; /* Espaço entre as imagens individuais dentro do mesmo grupo */
+}
+
+.imagensplaylist img {
+  height: 120px; /* Tamanho fixo para todas as imagens */
+  width: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que as imagens se ajustem corretamente */
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+}
+.emAlta {
+  display: flex;
+  flex-direction: column; /* Organiza os grupos verticalmente */
+  gap: 20px; /* Espaçamento entre as linhas */
+  padding: 10px;
+  align-items: center; /* Centraliza horizontalmente todo o conteúdo */
+
+}
+
+.grupo {
+  display: flex; /* Imagens alinhadas horizontalmente */
+  gap: 20px; /* Espaçamento entre as imagens no mesmo grupo */
+}
+
+.imagensplaylist img {
+  height: 500px; /* Tamanho fixo para todas as imagens */
+  width: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Garante que as imagens se ajustem corretamente */
+  border-radius: 8px; /* Opcional: bordas arredondadas */
+}

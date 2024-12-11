@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* imorts para usar fontes customizadas*/
 body, html {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%; /* Garante que o corpo ocupe toda a altura da página */
     background-color: #161616;
 }
 * {
@@ -12,6 +13,11 @@ body, html {
     font-family: "Goldman", sans-serif;
     font-weight: 900;
     font-style: normal;
+}
+.container {
+  display: flex; /* Alinhamento horizontal */
+  height: 100vh; /* Usa toda a altura da janela */
+  background-color: purple;
 }
 .playlist, .musicasPlaylist {
     display: flex; /* Alinha horizontalmente */
@@ -109,3 +115,132 @@ body, html {
   .controls .play {
     font-size: 24px;
   }
+  /* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+  --main-color: #fff;
+  --bg-color: #090909;
+  --sub-main-color: #B9B9B9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--bg-color);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.card__menu {
+  cursor: pointer;
+}
+
+.card__img {
+  height: 224px;
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  background: #131313;
+  border-radius: 100%;
+}
+
+.card__img svg {
+  width: 154px;
+  height: 154px;
+  border-radius: 100%;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--sub-main-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.card__wrapper {
+  display: flex;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  gap: 4px; /* Controla o espaço entre os botões */
+}
+
+.card__time {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+.card__timeline {
+  width: 100%;
+  height: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__timeline progress {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.card__timeline progress::-webkit-progress-bar {
+  background-color: #424242;
+  border-radius: 100px;
+}
+
+.card__timeline progress::-webkit-progress-value {
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.card__btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.card__btn path {
+  fill: var(--main-color);
+  padding: 50px;
+}
+
+.card__btn-play {
+  width: 60px;
+  height: 60px;
+  background: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__btn-play path {
+  fill: var(--bg-color);
+}
+.menuEsquerda {
+  background-color: red;
+  width: 30%; /* Largura do menu esquerdo */
+  padding: 10px;
+  color: white;
+}
+
+.menuEsquerda h2,
+.menuEsquerda h3 {
+  margin: 0;
+  padding: 0 0 0 10px; /* Espaçamento interno opcional */
+  text-align: left;
+}
+
+.menuPlaylist {
+  background-color: blue;
+  width: 70%; /* Largura do menu direito */
+  padding: 10px;
+  color: white;
+}
