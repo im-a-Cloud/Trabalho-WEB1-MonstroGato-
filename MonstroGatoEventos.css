@@ -23,30 +23,169 @@ body, html {
     width: auto;
 }
 .menu-lateral {
-    position: fixed; /* faz ele seguir a rolagem */
-    top: 0;
-    right: 0;
-    width: 100px; /* dimensões*/
-    height: 100vh; /* Altura total da viewport */
-    color: #fff;
-    padding: 20px;
-    margin-top: 10px;
-  }
+  position: fixed; /* faz ele seguir a rolagem */
+  top: 0;
+  right: 0;
+  width: 100px; /* dimensões*/
+  height: 100vh; /* Altura total da viewport */
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin: 15px 0;
+}
+
+.menu-lateral a {
+  color: #fff;
+  text-decoration: none;
+}
+.IconesRedesSociais{
+  width: 25px;
+  height: 25px;
+}
+.proximosEventos {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 20px; /* Espaço entre imagem e texto */
+  padding: 15px;
+  border: 2px solid white; /* Define a borda branca */
+  width: 85%;
+}
+.iconeProxEvento {
+  width: auto;
+  height: 200px;
+  object-fit: cover; /* Ajusta a imagem para caber */
+  border-radius: 8px;
+}
+.detalhesEventosFuturos h4 {
+  margin: 5px 0; /* Espaçamento entre as linhas */
+}
+.container {
+  position: relative;
+  top: 10;
+  left: 15%; 
+  display: inline-block;/* garante que a imagem e o texto se mantém juntos independente do zoom */
+}
+.infoEvento{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 100%;
+}
+.botoesEvento {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões na página */
+  padding: 10px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+.botao {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  left: 70%;
+  background-color: transparent; /* Fundo inicial do botão */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+#saiba_mais{
+  color: white;
+  background-color: lightgreen;
+}
+#comprar_ingresso{
+  color: white;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.page-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.menuInferiorContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #fff; /* Linha branca acima */
+  padding-top: 20px; /* Espaço entre a linha e o conteúdo */
+  width: 80%;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding-left: 0;
+  margin: 0; /* Remove qualquer margem extra, se necessário */
+  z-index: 999;
+}
+.menuInferior,
+.menuInferior2 {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre itens individuais dentro da lista */
   
-  .menu-lateral ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu-lateral li {
-    margin: 15px 0;
-  }
-  
-  .menu-lateral a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .IconesRedesSociais{
-    width: 25px;
-    height: 25px;
-  }
+}
+/* Estilos para os itens do menu */
+.itemMenuInferior,
+.itemMenuInferior2 {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+.direitos-autorais{
+  display: flex; /* deixa os elementos alinhados */
+  height: 2px; /* Espessura da linha */
+  background-color: white; /* Cor da linha */
+  margin: 20px 0; /* Espaçamento vertical */
+  width: 80%;
+  color: #383838;
+  font-style: italic;
+}
+.textoAbaixo{
+  display: flex;
+  width: 80%;
+  color: white;
+}
