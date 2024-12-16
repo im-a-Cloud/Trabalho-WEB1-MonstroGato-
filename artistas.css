@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    flex: 1; 
+}
+
+.highlight {
+    font-weight: 900;
+}
+
+/*Featured Artists*/
+.featured {
+    padding: 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.artist-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    text-align: center;
+    width: 200px;
+}
+
+.artist-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.artist-name {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Artists Roster */
+
+.roster {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.roster h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Grid de Artistas */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.artist {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.artist img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.artist p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Efeito Hover */
+.artist:hover {
+    transform: scale(1.05);
+}
+
+/* Paginação */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #555;
+}
+
+.pagination span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/*Be an artist*/
+.be-an-artist {
+    background-color: #0d0d0d; 
+    color: #fff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baa-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    border: 1px solid #fff; 
+    padding: 70px;
+}
+
+.baa-text {
+    max-width: 450px;
+}
+
+.baa-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.baa-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.baa-button {
+    display: inline-block;
+    background-color: transparent; 
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 2px solid #fff; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.baa-button:hover {
+    background-color: #fff;
+    color: #0d0d0d; 
+}
+
+.baa-image img {
+    max-width: 250px;
+    height: auto;
+}
+
+
+/*Rodapé*/
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #bbb;
+}
+
+.footer-text strong {
+    color: #fff;
+}
+
+.copyright p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+
