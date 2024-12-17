@@ -161,12 +161,11 @@ button:hover:not(:disabled) {
   margin: 0; /* Remove qualquer margem extra, se necessário */
   z-index: 999;
 }
-.menuInferior,
-.menuInferior2 {
+.menuInferior, .menuInferior2 {
   display: flex;
-  align-items: center;
-  gap: 20px; /* Espaçamento entre itens individuais dentro da lista */
-  
+  flex-direction: column; /* Ou row, dependendo do design */
+  align-items: flex-start; /* Alinha ao lado esquerdo */
+  gap: 10px; /* Espaçamento entre os itens */
 }
 /* Estilos para os itens do menu */
 .itemMenuInferior,
@@ -174,6 +173,9 @@ button:hover:not(:disabled) {
   color: white;
   font-size: 16px;
   padding: 10px;
+}
+li,ul{
+  list-style-type: none
 }
 .direitos-autorais{
   display: flex; /* deixa os elementos alinhados */

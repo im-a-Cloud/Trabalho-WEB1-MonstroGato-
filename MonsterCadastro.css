@@ -2,62 +2,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* imorts para usar fontes customizadas*/
 body, html {
-    height: 100%;
-    margin: 0;
-    background-color: #161616;
+  height: 100%;
+  margin: 0;
+  background-color: #161616;
 }
 * {
-    box-sizing: border-box;
-    color: white;
-    font-family: "Goldman", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Goldman", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .menu-lateral {
-    position: fixed; /* faz ele seguir a rolagem */
-    top: 0;
-    right: 0;
-    width: 100px; /* dimensões*/
-    height: 100vh; /* Altura total da viewport */
-    color: #fff;
-    padding: 20px;
-    margin-top: 10px;
-  }
-  
-  .menu-lateral ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu-lateral li {
-    margin: 15px 0;
-  }
-  
-  .menu-lateral a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .IconesRedesSociais{
-    width: 25px;
-    height: 25px;
-  }
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* caso a iamgem seja muito grande ela não irá "sobrecarregar" o container*/
-    fill: white;
-    border: 1px solid white; /* Espessura e cor da borda */
-  }
-  .card {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 25px;
-    padding-left: 6%;
-  }
+  position: fixed; /* faz ele seguir a rolagem */
+  top: 0;
+  right: 0;
+  width: 100px; /* dimensões*/
+  height: 100vh; /* Altura total da viewport */
+  color: #fff;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin: 15px 0;
+}
+
+.menu-lateral a {
+  color: #fff;
+  text-decoration: none;
+}
+.IconesRedesSociais{
+  width: 25px;
+  height: 25px;
+}
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* caso a iamgem seja muito grande ela não irá "sobrecarregar" o container*/
+  fill: white;
+  border: 1px solid white; /* Espessura e cor da borda */
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  padding-left: 6%;
+}
+form {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: stretch; /* Faz os elementos ocuparem toda a largura */
+  gap: 10px; /* Espaçamento entre os elementos */
+  max-width: 70%; /* Define uma largura máxima */
+  margin: auto; /* Centraliza o formulário na tela */
+  padding: 20px;
+}
+
+form h3 {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+form input, 
+form select {
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box; /* Inclui padding na largura total */
+  background-color: #161616;
+}
+
+.dataNascimento {
+  display: flex;
+  gap: 10px; /* Espaço entre os campos de data */
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+}
+label {
+  font-size: 14px;
+  color: #555;
+}
+.nomeContainer {
+  display: flex; /* Alinha os campos horizontalmente */
+  gap: 20px; /* Espaço entre os campos */
+}
+
+.campo {
+  display: flex; /* Organiza o título e o input verticalmente */
+  flex-direction: column; /* Coloca o título acima do input */
+  flex: 1; /* Faz os campos ocuparem o mesmo espaço */
+}
+
+.campo h3 {
+  margin: 0 0 5px; /* Espaçamento entre o título e o input */
+  font-size: 16px;
+  color: #333;
+}
+.campo input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+.dataNascimento {
+  display: flex; /* Organiza os campos horizontalmente */
+  gap: 20px; /* Espaçamento entre os campos */
+}
+
+.campoData {
+  display: flex; /* Organiza o título e o input verticalmente */
+  flex-direction: column; /* Coloca o título acima do input/select */
+  flex: 1; /* Garante mesmo tamanho para cada campoData */
+}
+
+.campoData h3 {
+  margin: 0 0 5px; /* Espaçamento entre o título e o input/select */
+  font-size: 16px;
+  color: #333;
+}
+
+.campoData input,
+.campoData select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Inclui o padding na largura total */
+}
+.menuInferiorContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-top: 2px solid #fff; /* Linha branca acima */
+  padding-top: 20px; /* Espaço entre a linha e o conteúdo */
+  width: 80%;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding-left: 0;
+  margin: 0; /* Remove qualquer margem extra, se necessário */
+  z-index: 999;
+}
+.menuInferior, .menuInferior2 {
+  display: flex;
+  flex-direction: column; /* Ou row, dependendo do design */
+  align-items: flex-start; /* Alinha ao lado esquerdo */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+/* Estilos para os itens do menu */
+.itemMenuInferior,
+.itemMenuInferior2 {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+li,ul{
+  list-style-type: none
+}
+.direitos-autorais{
+  display: flex; /* deixa os elementos alinhados */
+  height: 2px; /* Espessura da linha */
+  background-color: white; /* Cor da linha */
+  margin: 20px 0; /* Espaçamento vertical */
+  width: 80%;
+  color: #383838;
+  font-style: italic;
+}
+.textoAbaixo{
+  display: flex;
+  width: 80%;
+  color: white;
+}

@@ -14,11 +14,6 @@ body, html {
     font-weight: 900;
     font-style: normal;
 }
-.container {
-  display: flex; /* Alinhamento horizontal */
-  height: 100vh; /* Usa toda a altura da janela */
-  background-color: purple;
-}
 .playlist, .musicasPlaylist {
     display: flex; /* Alinha horizontalmente */
     justify-content: space-around; /* Espaçamento entre os itens */
@@ -53,23 +48,19 @@ body, html {
     border-radius: 8px;
     background: #333;
   }
-
   .song-details {
     flex-grow: 1;
   }
-
   .song-details h4 {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
   }
-
   .song-details p {
     margin: 5px 0 0;
     font-size: 14px;
     color: #bbb;
   }
-
   .progress-bar {
     background: #333;
     border-radius: 5px;
@@ -78,27 +69,23 @@ body, html {
     overflow: hidden;
     position: relative;
   }
-
   .progress-bar div {
     height: 100%;
     width: 45%;
     background: #1db954; /* Spotify Green */
   }
-
   .time {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     color: #aaa;
   }
-
   .controls {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 15px;
   }
-
   .controls button {
     background: none;
     border: none;
@@ -107,11 +94,9 @@ body, html {
     cursor: pointer;
     transition: color 0.3s;
   }
-
   .controls button:hover {
     color: #1db954;
   }
-
   .controls .play {
     font-size: 24px;
   }
@@ -125,11 +110,9 @@ body, html {
   border-radius: 20px;
   padding: 30px;
 }
-
 .card__menu {
   cursor: pointer;
 }
-
 .card__img {
   height: 224px;
   width: 224px;
@@ -140,13 +123,11 @@ body, html {
   background: #131313;
   border-radius: 100%;
 }
-
 .card__img svg {
   width: 154px;
   height: 154px;
   border-radius: 100%;
 }
-
 .card__title {
   font-weight: 500;
   font-size: 28px;
@@ -154,7 +135,6 @@ body, html {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .card__subtitle {
   font-weight: 400;
   font-size: 16px;
@@ -162,20 +142,17 @@ body, html {
   text-align: center;
   cursor: pointer;
 }
-
 .card__wrapper {
   display: flex;
   align-items: center; /* Alinha os itens verticalmente ao centro */
   justify-content: center; /* Alinha os itens horizontalmente ao centro */
   gap: 4px; /* Controla o espaço entre os botões */
 }
-
 .card__time {
   font-weight: 400;
   font-size: 12px;
   color: var(--main-color);
 }
-
 .card__timeline {
   width: 100%;
   height: 4px;
@@ -183,34 +160,28 @@ body, html {
   align-items: center;
   cursor: pointer;
 }
-
 .card__timeline progress {
   width: 100%;
   height: 100%;
   border-radius: 100px;
 }
-
 .card__timeline progress::-webkit-progress-bar {
   background-color: #424242;
   border-radius: 100px;
 }
-
 .card__timeline progress::-webkit-progress-value {
   background-color: #fff;
   border-radius: 100px;
 }
-
 .card__btn {
   border: none;
   background: transparent;
   cursor: pointer;
 }
-
 .card__btn path {
   fill: var(--main-color);
   padding: 50px;
 }
-
 .card__btn-play {
   width: 60px;
   height: 60px;
@@ -220,27 +191,88 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-
 .card__btn-play path {
   fill: var(--bg-color);
 }
-.menuEsquerda {
-  background-color: red;
-  width: 30%; /* Largura do menu esquerdo */
-  padding: 10px;
-  color: white;
+/* Contêiner pai */
+.container {
+  display: flex; /* Alinha os filhos horizontalmente */
+  width: 100%; /* Garante que o contêiner ocupa toda a largura */
+  margin: 0; /* Remove margens padrão */
+  padding: 0;
 }
 
-.menuEsquerda h2,
-.menuEsquerda h3 {
-  margin: 0;
-  padding: 0 0 0 10px; /* Espaçamento interno opcional */
-  text-align: left;
+.menuEsquerda {
+  width: 30%; /* Define a largura do menu esquerdo */
+  padding: 10px;
+  color: white;
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  border-right: 2px solid white; /* Linha branca fina à direita */
+  border-top: 2px solid white; /* Linha branca fina à direita */
 }
 
 .menuPlaylist {
-  background-color: blue;
-  width: 70%; /* Largura do menu direito */
-  padding: 10px;
+  width: 70%; /* Define a largura do menu direito */
+  color: white;
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  border-top: 2px solid white; /* Linha branca fina à direita */
+}
+
+.menuEsquerda h2,
+.menuEsquerda h3,
+.menuPlaylist h2,
+.menuPlaylist h3 {
+  margin: 0;
+  padding: 0 0 10px 10px;
+  text-align: left;
+}
+.musicasPlaylist table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.musicasPlaylist th, 
+.musicasPlaylist td {
+  padding: 8px; 
+}
+.musicasPlaylist th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.musicasPlaylist tr:hover {
+  background-color: gray; 
+}
+#busca {
+  width: 100%; 
+  max-width: 250px;
+  padding: 10px 15px; 
+  font-size: 16px; 
+  background-color: #333; 
+  color: #fff; 
+  border: 1px solid #555;
+  border-radius: 5px;
+  outline: none; 
+  box-sizing: border-box; 
+  position: relative;
+  left: 5%;
+}
+#busca:focus {
+  background-color: #444; 
+  border-color: #888; 
+}
+.containerCima{
+  width: 70%;
+  height: 7%;
+  position: relative;
+  left: 29.9%;
+  border-left: 2px solid white; /* Linha branca fina à direita */
+}
+thead th {
+  background-color: #333; /* Fundo escuro no cabeçalho */
+  color: black; /* Texto branco */
+  font-weight: bold;
+}
+h3{
   color: white;
 }

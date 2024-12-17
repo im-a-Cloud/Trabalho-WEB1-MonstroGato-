@@ -65,60 +65,121 @@
                   </li>
                 </div>
         <h2>Crie uma conta usando</h2>
-        <h2>Ou com seu E-mail</h2>
         <div class="card">
-            <a href="#" class="socialContainer">
-             <img src = "https://img.icons8.com/m_sharp/512/FFFFFF/mac-os.png " class="IconesRedesSociais">
-            </a>
-            <a href="#" class="socialContainer">
-              <img src ="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png" class="IconesRedesSociais">
-            </a>
-            <a href="#" class="socialContainer">
-              <img src = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" class="IconesRedesSociais">
-            </a>
-            <a href="#" class="socialContainer">
-              <img src = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/spotify-white-icon.png" class="IconesRedesSociais">
-            </a>
-            <a href="#" class="socialContainer">
-              <img src = "https://static-00.iconduck.com/assets.00/soundcloud-icon-512x223-ug4mi2g7.png" class="IconesRedesSociais">
-            </a>
-          </div>
+          <a href="#" class="socialContainer">
+           <img src = "https://img.icons8.com/m_sharp/512/FFFFFF/mac-os.png " class="IconesRedesSociais">
+          </a>
+          <a href="#" class="socialContainer">
+            <img src ="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png" class="IconesRedesSociais">
+          </a>
+          <a href="#" class="socialContainer">
+            <img src = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" class="IconesRedesSociais">
+          </a>
+          <a href="#" class="socialContainer">
+            <img src = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/spotify-white-icon.png" class="IconesRedesSociais">
+          </a>
+          <a href="#" class="socialContainer">
+            <img src = "https://static-00.iconduck.com/assets.00/soundcloud-icon-512x223-ug4mi2g7.png" class="IconesRedesSociais">
+          </a>
+        </div>
+        <h2>Ou com seu E-mail</h2>
+
+        </center>
         <form>
             <h3>Endereço de e-mail</h3>
             <input type="email" id="email" name="email" placeholder="Entre com seu e-mail">
             <h3>Senha</h3>
             <input type="text" id="senha" name="senha" placeholder="Sua senha">
-            <h3>Primeiro nome</h3>
-            <input type="text" id="primeiroNome" name="primeiroNome" placeholder="Primeiro  Nome">
-            <h3>Segundo nome</h3>
-            <input type="text" id="segundoNome" name="segundoNome" placeholder="Segundo  Nome">
-            <h3>Data de Nascimento</h3>
-            <input type="text" id="diaNascimento" name="diaNascimento" placeholder="Dia">
-            <select name="months" id="months">
-              <option value="meses">Mês</option>
-              <option value="january">Janeiro</option>
-              <option value="february">Fevereiro</option>
-              <option value="march">Março</option>
-              <option value="april">Abril</option>
-              <option value="may">Maio</option>
-              <option value="june">Junho</option>
-              <option value="july">Julho</option>
-              <option value="august">Agosto</option>
-              <option value="september">Setembro</option>
-              <option value="october">Outubro</option>
-              <option value="november">Novembro</option>
-              <option value="december">Dezembro</option>
-            </select>
-            <input type="text" id="anoNascimento" name="anoNascimento" placeholder="Ano">
+            <div class="nomeContainer">
+              <div class="campo">
+                  <h3>Primeiro Nome</h3>
+                  <input type="text" id="primeiroNome" name="primeiroNome" placeholder="Primeiro Nome">
+              </div>
+              <div class="campo">
+                  <h3>Segundo Nome</h3>
+                  <input type="text" id="segundoNome" name="segundoNome" placeholder="Segundo Nome">
+              </div>
+          </div>          
+          <div class="dataNascimento">
+            <div class="campo">
+                <h3>Dia</h3>
+                <input type="text" id="diaNascimento" name="diaNascimento" placeholder="Dia">
+            </div>
+            <div class="campoData">
+                <h3>Mês</h3>
+                <select name="months" id="months">
+                    <option value="meses">Mês</option>
+                    <option value="january">Janeiro</option>
+                    <option value="february">Fevereiro</option>
+                    <option value="march">Março</option>
+                    <option value="april">Abril</option>
+                    <option value="may">Maio</option>
+                    <option value="june">Junho</option>
+                    <option value="july">Julho</option>
+                    <option value="august">Agosto</option>
+                    <option value="september">Setembro</option>
+                    <option value="october">Outubro</option>
+                    <option value="november">Novembro</option>
+                    <option value="december">Dezembro</option>
+                </select>
+            </div>
+            <div class="campoData">
+                <h3>Ano</h3>
+                <input type="text" id="anoNascimento" name="anoNascimento" placeholder="Ano">
+            </div>
+        </div>
+        
             <h3>Localização</h3>
-            <input type="text" id="localizacao" name="localizacao" placeholder="Cidade/País"><br>
+            <input type="text" id="localizacao" name="localizacao" placeholder="Cidade/País">
 
-            <input type="checkbox" id="termos" name="termos" value="termos">
-            <label for="termos">Concordo com os termos de serviço e politicas de privacidade</label><br><br>
-            <input type="checkbox" id="atualizacoes" name="atualizacoes" value="atualizacoes">
-            <label for="atualizacoes"> Desejo receber atualizações</label><br>
-            <input type="submit" value="Criar Conta">  
+            <div class="checkboxContainer">
+              <div class="checkboxItem">
+                <input type="checkbox" id="termos" name="termos" value="termos">
+                <label for="termos">Concordo com os termos de serviço e políticas de privacidade</label>
+              </div>
+              <div class="checkboxItem">
+                <input type="checkbox" id="atualizacoes" name="atualizacoes" value="atualizacoes">
+                <label for="atualizacoes">Desejo receber atualizações</label>
+              </div>
+            </div>    
+            <center>
+              <input type="submit" value="Criar Conta" class="btnCriarConta">
+            </center>
+
         </form>
-    </center>
+        <footer>
+          <center>
+          <div class="menuInferiorContainer">
+            <ul class="menuinferior">
+              <li class="itemMenuInferior">SOBRE NÓS MONSTROGATO</li>
+              <li class="itemMenuInferior">CONTATE-NOS</li>
+              <li class="itemMenuInferior">CARREIRAS</li>
+              <li class="itemMenuInferior">NOTÍCIAS</li>
+              <li class="itemMenuInferior">IMPRENSSA</li>
+            </ul>   
+            <ul class="menuinferior2">
+              <li class="itemMenuInferior2">TERMOS DE SERVIÇO</li>
+              <li class="itemMenuInferior2">POLITICA DE PRIVACIDADE</li>
+            </ul>
+              <form>
+                <h2>MONSTROGATO NOTÍCIAS</h2>
+                <h3 class="campoEmail">Não perca nada, fique em dia<br> com as últimas novidades</h3>
+                <input type="email" id="email" name="email" placeholder="Entre com seu e-mail">
+              </form>              
+          </div>
+          <div class="direitos-autorais">
+            <p class="direitos">2024 MonstroGato ©, todos os direitos reservados</p>
+          </div>
+          <br>
+          <div class="textoAbaixo">
+            <p class="agradecimentos">We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, 
+              including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) 
+              and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.<br><br>
+              We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on 
+              which our LA team live and work.
+              </p>
+              <!-- Uso de <br> para quebrar a linha e ficar no mesmo estilo da página original -->
+          </div>
+        </center>
     </body>
 </html>
