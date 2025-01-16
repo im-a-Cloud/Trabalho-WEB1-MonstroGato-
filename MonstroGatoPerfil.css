@@ -43,21 +43,18 @@ body, html {
 }
 .layout {
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: stretch; /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
   height: a; /* Altura total da tela */
   position: relative;
   top: 30%;
-  background-color: yellow;
 }
 .opcoesLaterais {
-  background-color: red;
   width: 20%;
   height: auto; /* Para ajustar dinamicamente ao conteúdo */
   position: relative;
 }
 .container {
-  background-color: blue;
   width: 55%;
   height: auto; /* Para ajustar dinamicamente ao conteúdo */
   position: relative;
@@ -113,3 +110,16 @@ body, html {
   width: 80%;
   color: white;
 }
+button {
+  background-color: red;
+  border: none; /* Remove bordas padrão */
+  border-bottom: 2px solid black; /* Linha abaixo */
+  width: auto; /* Largura fixa */
+  height: auto; /* Altura fixa */
+  font-size: 18px; /* Tamanho do texto */
+  padding: 10px 20px; /* Espaçamento interno adicional */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Indica que o botão é clicável */
+  text-align: center; /* Centraliza o texto */
+}
+
