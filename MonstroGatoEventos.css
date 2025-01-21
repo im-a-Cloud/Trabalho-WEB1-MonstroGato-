@@ -53,6 +53,11 @@ body, html {
   color: #fff;
   text-decoration: none;
 }
+.menu-lateral .iconmenu .IconesRedesSociais{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
 .IconesRedesSociais{
   width: 25px;
   height: 25px;
@@ -103,7 +108,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border: none;
-  color: black;
+  color: white;
   gap: 8px;
   cursor: pointer;
   position: relative;
@@ -112,7 +117,7 @@ body, html {
   font-size: 20px;
   background-color: transparent; /* Fundo inicial do botão */
   transition: background-color 0.3s, color 0.3s; /* Transição suave para a mudança de cor */
-  background-color: white;
+  background-color: #333;
 }
 
 #saiba_mais{

@@ -33,21 +33,10 @@ header {
     background-color: white;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-h1 {
+.header-container h1 {
     margin: 0;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 300;
     text-align: center;
     flex: 1; 
 }
@@ -330,6 +319,11 @@ form {
     margin-top: 10px;
   }
   
+  .menu-lateral .iconmenu .IconesRedesSociais{
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+  }
   .menu-lateral ul {
     list-style-type: none;
     padding: 0;

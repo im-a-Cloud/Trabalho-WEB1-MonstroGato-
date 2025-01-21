@@ -37,6 +37,11 @@ body, html {
   color: #fff;
   text-decoration: none;
 }
+.menu-lateral .iconmenu .IconesRedesSociais{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
 .IconesRedesSociais{
   width: 25px;
   height: 25px;

@@ -13,6 +13,34 @@ body, html {
     font-weight: 900;
     font-style: normal;
 }
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  flex: 1; 
+}
+
+.highlight {
+  font-weight: 900;
+}
 .menu-lateral {
   position: fixed;
   top: 0;
@@ -36,6 +64,11 @@ body, html {
 .menu-lateral a {
   color: #fff;
   text-decoration: none;
+}
+.menu-lateral .iconmenu .IconesRedesSociais{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
 }
 .IconesRedesSociais{
   width: 25px;
