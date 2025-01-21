@@ -13,19 +13,36 @@ body, html {
     font-weight: 900;
     font-style: normal;
 }
-/* Imagem de fundo, aplica um blar, define o tamanho e posição, z-index "joga ela pra trás" */
-.bg-image {
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("https://cdns-images.dzcdn.net/images/cover/b895f5ba4f10417b83bf323bcbc2c0fe/1900x1900-000000-80-0-0.jpg");
-  background-size: cover;
-  background-position: center;
+/*Header*/
+header {
+  text-align: center;
+  padding: 20px;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  flex: 1; 
+}
+
+.highlight {
+  font-weight: 900;
+}
+
 .menu-lateral {
     position: fixed; /* faz ele seguir a rolagem */
     top: 0;
@@ -50,6 +67,11 @@ body, html {
     color: #fff;
     text-decoration: none;
   }
+  .menu-lateral .iconmenu .IconesRedesSociais{
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+  }
   .IconesRedesSociais{
     width: 25px;
     height: 25px;
@@ -72,7 +94,8 @@ body, html {
     align-items: center;
     justify-content: center;
     padding: 25px 25px;
-    padding-left: 6%;
+    padding-left: 2%;
+    margin-bottom: 7em;
   }
   /*Footer*/
 .menuInferiorContainer{
@@ -155,16 +178,19 @@ form h3 {
   color: white;
 }
 
+.loginform h3{
+  margin-top: 15px;
+}
+.loginform{
+  margin-top: 5em;
+}
+
 form input, 
 form select {
   padding: 10px;
   font-size: 14px;
   box-sizing: border-box; /* Inclui padding na largura total */
   background-color: #161616;
-}
-.loginform input, 
-.loginform select {
-    background-color: #383838;
 }
 input[type="submit"] {
     background-color: white;

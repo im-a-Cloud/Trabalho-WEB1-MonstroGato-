@@ -6,10 +6,24 @@
     </head>
     <body>
         <center>
-        <h1>Criar uma conta no Monstrogato</h1>
-        <h4>Já tem uma conta? clique aqui</h4>
+          <header>
+            <div class="header-container">
+                <!-- Logo Monstercat -->
+                <div class="logo">
+                    <img src="images/logo.png" alt="Monstercat Logo">
+                </div>
+        
+                <!-- Título -->
+                <h1>Crie uma conta na <span class="highlight">MonstroGato</span></h1>
+            </div>
+        </header>
         <div class="menu-lateral">
             <ul>
+              <li class="iconmenu">
+                <a href="#secao1">
+                  <img src = "images/menu.ico" class="IconesRedesSociais">
+                </a>
+              </li> 
               <li>
                 <a href="#secao1">
                   <img src = "https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" class="IconesRedesSociais">
@@ -35,35 +49,12 @@
                   <img src ="https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png" class="IconesRedesSociais">
                 </a>
               </li>
+              <li>
+                <a href="#secao2">
+                  <img src ="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" class="IconesRedesSociais">
+                </a>
+              </li>
             </div>
-            <div class="menu-lateral">
-                <ul>
-                  <li>
-                    <a href="#secao1">
-                      <img src = "https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" class="IconesRedesSociais">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#secao2">
-                      <img src ="https://www.iconsdb.com/icons/preview/white/twitter-xxl.png" class="IconesRedesSociais">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#secao2">
-                      <img src ="https://www.edigitalagency.com.au/wp-content/uploads/TikTok-icon-white-symbol-glyph-png.png" class="IconesRedesSociais">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#secao2">
-                      <img src ="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitch-white-icon.png" class="IconesRedesSociais">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#secao2">
-                      <img src ="https://img.icons8.com/m_rounded/512/FFFFFF/facebook-new.png" class="IconesRedesSociais">
-                    </a>
-                  </li>
-                </div>
         <h2>Crie uma conta usando</h2>
         <div class="card">
           <a href="#" class="socialContainer">
@@ -85,7 +76,7 @@
         <h2>Ou com seu E-mail</h2>
 
         </center>
-        <form>
+        <form class="formCadastro">
             <h3>Endereço de e-mail</h3>
             <input type="email" id="email" name="email" placeholder="Entre com seu e-mail">
             <h3>Senha</h3>
@@ -107,7 +98,7 @@
             </div>
             <div class="campoData">
                 <h3>Mês</h3>
-                <select name="months" id="months">
+                <select name="months" id="months" placeholder="Mês">
                     <option value="meses">Mês</option>
                     <option value="january">Janeiro</option>
                     <option value="february">Fevereiro</option>

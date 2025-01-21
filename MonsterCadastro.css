@@ -13,6 +13,34 @@ body, html {
   font-weight: 900;
   font-style: normal;
 }
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  flex: 1; 
+}
+
+.highlight {
+  font-weight: 900;
+}
 .menu-lateral {
   position: fixed; /* faz ele seguir a rolagem */
   top: 0;
@@ -37,6 +65,11 @@ body, html {
   color: #fff;
   text-decoration: none;
 }
+.menu-lateral .iconmenu .IconesRedesSociais{
+  width: 20px;
+  height: 20px;
+  margin-left: 3px;
+}
 .IconesRedesSociais{
   width: 25px;
   height: 25px;
@@ -59,7 +92,7 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 25px 25px;
-  padding-left: 6%;
+  padding-left: 2%;
 }
 form {
   display: flex;
@@ -70,8 +103,13 @@ form {
   margin: auto; /* Centraliza o formulário na tela */
   padding: 20px;
 }
-
-form h3 {
+.formCadastro{
+  margin-bottom: 10em;
+}
+.formCadastro h3, .formCadastro .campo h3, .formCadastro .campoData h3{
+  margin: 15px 0 0 0;
+}
+form h3, form .campo h3, form .campoData h3{
   margin: 0;
   font-size: 16px;
   color: white;
@@ -83,6 +121,10 @@ form select {
   font-size: 14px;
   box-sizing: border-box; /* Inclui padding na largura total */
   background-color: #161616;
+}
+
+.campoData select option{
+  color: #555;
 }
 
 .dataNascimento {
@@ -100,7 +142,7 @@ input[type="submit"] {
 }
 label {
   font-size: 14px;
-  color: #555;
+  color: rgb(177, 177, 177);
 }
 .nomeContainer {
   display: flex; /* Alinha os campos horizontalmente */
@@ -139,7 +181,6 @@ label {
 .campoData h3 {
   margin: 0 0 5px; /* Espaçamento entre o título e o input/select */
   font-size: 16px;
-  color: #333;
 }
 
 .campoData input,
